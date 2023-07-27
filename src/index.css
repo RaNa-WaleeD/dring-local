@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: whitesmoke;
+}
+.primary-color {
+  background: #ff8000;
+}
+.react-phone-number-input__input:focus,
+.react-phone-number-input__input:active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.image-checkbox {
+  position: relative;
+  display: inline-block;
+}
+
+.image-checkbox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.image-checkbox input[type="checkbox"] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  opacity: 0;
+}
+
+.image-checkbox {
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.image-checkbox input[type="checkbox"]:checked + label .image-checkbox {
+  border-color: #ff8000;
+}
+
+.PhoneInputInput {
+  border: none;
+  outline: none;
+}
