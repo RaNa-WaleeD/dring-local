@@ -7,6 +7,7 @@ import TCIcon from "../assets/T&C.png";
 import logoutIcon from "../assets/logout.png";
 import helpIcon from "../assets/help.png";
 import privacyIcon from "../assets/privacy.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOrderOpen, setIsOrderOpen] = useState(false);
@@ -23,7 +24,9 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between px-14 py-2 primary-color text-white">
       <div className="flex items-center justify-start">
-        <img src={logo} alt="Logo" className="h-[45px] w-[95px] pl-6" />
+        <Link to={"/"}>
+          <img src={logo} alt="Logo" className="h-[45px] w-[95px] pl-6" />
+        </Link>
         <h1 className="text-lg font-bold"></h1>
       </div>
       <nav>
