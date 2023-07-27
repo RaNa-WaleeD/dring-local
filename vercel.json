@@ -1,0 +1,17 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/" },
+    { "source": "/(.*)", "destination": "/" },
+    { "source": "/login", "destination": "/login" },
+    { "source": "/signup", "destination": "/signup" },
+    { "source": "/reset-password", "destination": "/reset-password" },
+    { "source": "/email-verification", "destination": "/email-verification" },
+    { "source": "/create-password", "destination": "/create-password" },
+    { "source": "/details", "destination": "/details" },
+    { "source": "/wallet", "destination": "/wallet" },
+    { "source": "/notification", "destination": "/notification" },
+    { "source": "/status", "destination": "/status" },
+    { "source": "/chat", "destination": "/chat" },
+    { "source": "/profile", "destination": "/profile" }
+  ]
+}
